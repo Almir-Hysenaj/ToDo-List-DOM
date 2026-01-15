@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Left -->
+    <div class="main-container">
+      <div class="left-container">
+        <div class="left-header">
+          <button class="close-left js-close-left">&#60</button>
+          <h2>My Lists</h2>
+        </div>
+        <div class="left-body">
+          <button class="view-all js-view-all">All Tasks</button>
+          <div class="list-container"></div>
+          <button class="add-new-list js-add-new-list">Add New List...</button>
+        </div>
+      </div>
+
+      <!-- Middle -->
+      <div class="middle-container">
+        <div class="middle-header">
+          <button class="toggle-sidebar js-toggle-sidebar">
+            <img
+              class="burger-menu"
+              src="/Images/icons8-menu-50.png"
+              alt="menu"
+            />
+          </button>
+          <h2>Current Tasks</h2>
+        </div>
+        <button class="add-new-task js-add-new-task">Add New Task...</button>
+        <div class="task-container"></div>
+      </div>
+
+      <!-- Right -->
+      <div class="right-container"></div>
+
+      <div class="toast"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
